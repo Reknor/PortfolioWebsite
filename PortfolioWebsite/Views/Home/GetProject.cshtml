@@ -1,0 +1,32 @@
+﻿@model BartlomiejJagielloLab4ZadDom.Models.ProjectViewModel
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Show project with all details -->
+<div class="project">
+    <h2>@Model.Name</h2>
+    <h4>@Model.Description</h4>
+    <!-- Take all project images -->
+    @foreach (var photo in Model.Photos)
+    {
+        <img src="@Url.Content(photo)" alt="@Model.Name" />
+        <hr />
+    }
+
+    <br />
+    <!-- Add your own comment -->
+    <h2>@Html.ActionLink("Add comment", "AddComment", "Home")</h2>
+    <br />
+    <!-- Comments section -->
+    <h2>Comments</h2>
+    @foreach (var comment in Model.Comments)
+    {
+        <label>@comment.Nick</label>
+        <br />
+        <label>@comment.Message</label>
+        <br />
+        <hr />
+    }
+</div>

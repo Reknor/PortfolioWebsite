@@ -1,0 +1,19 @@
+﻿@model List<BartlomiejJagielloLab4ZadDom.Models.ProjectViewModel>
+
+@{
+    ViewData["Title"] = "Portfolio";
+}
+
+<h2><a href="http://kredek.iiar.pwr.wroc.pl/">Kredek </a> projects</h2>
+<br />
+<!-- Take every project and display -->
+@foreach (var project in Model)
+{
+    <div class="project">
+        <!-- Create link to detailed project page -->
+        <h2>@Html.ActionLink(project.Name, "GetProject", "Home", new { projectName = project.Name }, null)</h2>
+        <h4>@project.Description</h4>
+        <!-- Take first project image -->
+        <img src="@Url.Content(project.Photos[0])" alt="@project.Name" />
+    </div>
+}

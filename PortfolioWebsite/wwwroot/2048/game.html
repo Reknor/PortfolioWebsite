@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Website configuration and data -->
+<head>
+    <meta charset="utf-8" />
+    <title>2048</title>
+
+    <!-- Include styles -->
+    <link href="css/game.css" rel="stylesheet" , type="text/css" />
+    <!-- Add website icon -->
+    <link rel="icon" type="image/png" href="img/2048red.png" />
+    <!-- Include script -->
+    <script src="scripts/game.js" charset="utf-8"></script>
+</head>
+
+<!-- Website appearance-->
+<body>
+
+<!-- Game score and time container-->
+    <div id="before-game-container">
+        <div id="score-title">Score: 0</div>
+        <div id ="timer">0:00</div>
+    </div>
+<!-- New game button container -->
+<div class="button-container">
+    <button id="new-game-button" onclick="ResetGame();">New Game</button>
+    <button id="highscore-button" type="button"><a href="scores.html" target="_blank">High Scores</a></button>
+</div>
+
+<!-- Main game features container -->
+    <div id="game-container">
+        <div id="grid-container">
+            
+
+        </div>
+    </div>
+
+
+</body>
+</html>

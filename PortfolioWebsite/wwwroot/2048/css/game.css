@@ -1,0 +1,175 @@
+﻿/* Website body style */
+body {
+    background-color: dimgray;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Header before main game */
+#game-header {
+    text-align: center;
+    font-size: 60px;
+    height: auto;
+    color: #f60909;
+}
+
+    /* Game title */
+    #game-header h1 {
+        height: auto;
+        margin: 40px;
+    }
+
+/* Buttons container in main page */
+#menu-buttons-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+/* Buttons in menu style */
+    #menu-buttons-container button {
+        font-size: 48px;
+        width: 300px;
+        height: 160px;
+        margin: 20px;
+        background-color: maroon;
+        color: white;
+        align-self: center;
+    }
+
+/* Before game container */
+#before-game-container {
+    display: flex;
+    justify-content: right;
+    float: right;
+    column-gap: 50px;
+    font-size: 36px;
+}
+
+/* New game button container */
+.button-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex: auto;
+    grid-column-gap: 50px;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* New game button properties */
+#new-game-button {
+    width: auto;
+    height: auto;
+    font-size: 36px;
+    background-color: maroon;
+    color: white;
+}
+
+/* Scores button properties */
+#highscore-button {
+    width: auto;
+    height: auto;
+    font-size: 36px;
+    background-color: maroon;
+    color: white;
+}
+
+    /* Link to highscores page */
+    #highscore-button a {
+        text-decoration: none;
+        color: white;
+    }
+
+/* Game container style, centered and not scalable */
+#game-container {
+    width: 600px;
+    height: 600px;
+    background-color: indianred;
+    border: 4px solid black;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+/* Background grid style */
+#grid-container {
+    background-color: indianred;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+/* Background square style */
+.square {
+    /* Container properties */
+    background-color: darkred;
+    width: 120px;
+    height: 120px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    /* Text properties */
+    display: flex;
+    color: aliceblue;
+    font-size: 36px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+/* High scores table */
+#scores-container {
+    width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    align-content: center;
+    background-color: indianred;
+    border: 5px solid maroon;
+    border-collapse: collapse;
+    font-size: 36px;
+    text-align: center;
+    vertical-align: center;
+}
+    /* High scores row */
+    #scores-container tr {
+        padding: 5px;
+    }
+    /* High scores column header*/
+    #scores-container th {
+        width: 45%;
+        border: 5px solid maroon;
+    }
+    /* High scores column with place*/
+    #scores-container #place {
+        width: 5%;
+        border: 5px solid maroon;
+    }
+    /* High scores data row*/
+    #scores-container td {
+        border: 5px solid maroon;
+    }
+
+/* Score page buttons container */
+/* High score return to menu button */
+#menu-button {
+    align-content: center;
+    width: 200px;
+    height: 120px;
+    font-size: 36px;
+    background-color: maroon;
+    color: white;
+}
+    /* Link to main menu page */
+    #menu-button a {
+        text-decoration: none;
+        color: white;
+    }
